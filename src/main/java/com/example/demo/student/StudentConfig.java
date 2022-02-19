@@ -13,7 +13,7 @@ import static java.time.Month.*;
 @Configuration
 public class StudentConfig {
     @Bean
-    CommandLineRunner commandLineRunner(StudentRepository repository) {
+    CommandLineRunner commandLineRunnerStudent(StudentRepository repository) {
         return args -> {
             Student mariam = new Student(
                     "Mariam",
